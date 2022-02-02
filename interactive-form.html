@@ -1,286 +1,288 @@
 <div class="p-modal" id="contact-modal">
-	<div class="p-modal__dialog" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
-		<header class="p-modal__header" style="display: block; border-bottom: 0;">
-			<button class="p-modal__close" aria-label="Close active modal" style="margin-left: -1rem">Close</button>
-			<h2 class="p-modal__title" id="modal-title">Get your Kubeflow stack running</h2>
-		</header>
-		<div class="js-pagination js-pagination--1">
-			<p>Tell us about your project so we bring the right team to the conversation.</p>
-			<div class="js-formfield">
-				<h3 class="p-heading--5">Where do you want to run your ML workloads?</h3>
-				<div class="row u-no-padding">
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="workloads-private-cloud-VMware">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-VMware">
-							<span class="p-checkbox__label">VMware</span>
-						</label>
-						<label class="p-checkbox" for="workloads-private-cloud-Bare-metal">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Bare-metal">
-							<span class="p-checkbox__label">Bare metal</span>
-						</label>
-						<label class="p-checkbox" for="workloads-private-cloud-OpenStack">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-OpenStack">
-							<span class="p-checkbox__label">OpenStack</span>
-						</label>
-						<label class="p-checkbox" for="workloads-private-cloud-Workstations">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Workstations">
-							<span class="p-checkbox__label">Workstations</span>
-						</label>
-						<label class="p-checkbox" for="workloads-private-cloud-Embedded">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Embedded">
-							<span class="p-checkbox__label">Embedded</span>
-						</label>
-						<label class="p-checkbox" for="workloads-private-cloud-Edge">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Edge">
-							<span class="p-checkbox__label">Edge</span>
-						</label>
-						<div class="js-other-container">
-							<label class="p-checkbox" for="workloads-private-cloud-other">
-								<input type="checkbox" class="js-other-container__checkbox p-checkbox__input"
-									id="workloads-private-cloud-other">
-								<span class="p-checkbox__label">Other</span>
-							</label>
-							<label for="workloads-private-cloud-other-specified">
-								<input type="text" id="workloads-private-cloud-other-specified" class="js-other-container__input"
-									placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
-									aria-label="Other private cloud platform">
-							</label>
-						</div>
-					</div>
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="workloads-public-cloud-AWS">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-AWS">
-							<span class="p-checkbox__label">Amazon Web Services</span>
-						</label>
-						<label class="p-checkbox" for="workloads-public-cloud-Google">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Google">
-							<span class="p-checkbox__label">Google Cloud Platform</span>
-						</label>
-						<label class="p-checkbox" for="workloads-public-cloud-IBM-Cloud">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-IBM-Cloud">
-							<span class="p-checkbox__label">IBM Cloud</span>
-						</label>
-						<label class="p-checkbox" for="workloads-public-cloud-Microsoft-Azure">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Microsoft-Azure">
-							<span class="p-checkbox__label">Microsoft Azure</span>
-						</label>
-						<label class="p-checkbox" for="workloads-public-cloud-Oracle-Cloud">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Oracle-Cloud">
-							<span class="p-checkbox__label">Oracle Cloud</span>
-						</label>
-						<div class="js-other-container">
-							<label class="p-checkbox" for="workloads-public-cloud-other">
-								<input type="checkbox" class="js-other-container__checkbox p-checkbox__input"
-									id="workloads-public-cloud-other">
-								<span class="p-checkbox__label">Other</span>
-							</label>
-							<label for="workloads-public-cloud-other-specified">
-								<input type="text" id="workloads-public-cloud-other-specified" class="js-other-container__input"
-									placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
-									aria-label="Other private cloud platform">
-							</label>
-						</div>
-					</div>
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="workloads-metal-Nvidia">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-metal-Nvidia">
-							<span class="p-checkbox__label">Nvidia</span>
-						</label>
-						<label class="p-checkbox" for="workloads-metal-AMD">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-metal-AMD">
-							<span class="p-checkbox__label">AMD</span>
-						</label>
-						<label class="p-checkbox" for="workloads-metal-Intel">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-metal-Intel">
-							<span class="p-checkbox__label">Intel</span>
-						</label>
-						<label class="p-checkbox" for="workloads-metal-POWER">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-metal-POWER">
-							<span class="p-checkbox__label">POWER</span>
-						</label>
-						<label class="p-checkbox" for="workloads-metal-Z">
-							<input class="p-checkbox__input" type="checkbox" id="workloads-metal-Z">
-							<span class="p-checkbox__label">Z</span>
-						</label>
-					</div>
-				</div>
-			</div>
-			<ol class="p-pagination">
-				<li class="p-pagination__item">
-					<a class="p-button--positive p-pagination__link--next" href="">Next</a>
-				</li>
-			</ol>
-		</div>
+  <div class="p-modal__dialog" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <header class="p-modal__header">
+      <button class="p-modal__close" aria-label="Close active modal" style="margin-left: -1rem">Close</button>
+      <h2 class="p-modal__title" id="modal-title">Get your Kubeflow stack running</h2>
+    </header>
+    <div class="js-pagination js-pagination--1">
+      <p>Tell us about your project so we bring the right team to the conversation.</p>
+      <div class="js-formfield">
+        <h3 class="p-heading--5">Where do you want to run your ML workloads?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="workloads-private-cloud-VMware">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-VMware">
+              <span class="p-checkbox__label">VMware</span>
+            </label>
+            <label class="p-checkbox" for="workloads-private-cloud-Bare-metal">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Bare-metal">
+              <span class="p-checkbox__label">Bare metal</span>
+            </label>
+            <label class="p-checkbox" for="workloads-private-cloud-OpenStack">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-OpenStack">
+              <span class="p-checkbox__label">OpenStack</span>
+            </label>
+            <label class="p-checkbox" for="workloads-private-cloud-Workstations">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Workstations">
+              <span class="p-checkbox__label">Workstations</span>
+            </label>
+            <label class="p-checkbox" for="workloads-private-cloud-Embedded">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Embedded">
+              <span class="p-checkbox__label">Embedded</span>
+            </label>
+            <label class="p-checkbox" for="workloads-private-cloud-Edge">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-private-cloud-Edge">
+              <span class="p-checkbox__label">Edge</span>
+            </label>
+            <div class="js-other-container">
+              <label class="p-checkbox" for="workloads-private-cloud-other">
+                <input type="checkbox" class="js-other-container__checkbox p-checkbox__input"
+                  id="workloads-private-cloud-other">
+                <span class="p-checkbox__label">Other</span>
+              </label>
+              <label for="workloads-private-cloud-other-specified">
+                <input type="text" id="workloads-private-cloud-other-specified" class="js-other-container__input"
+                  placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
+                  aria-label="Other private cloud platform">
+              </label>
+            </div>
+          </div>
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="workloads-public-cloud-AWS">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-AWS">
+              <span class="p-checkbox__label">Amazon Web Services</span>
+            </label>
+            <label class="p-checkbox" for="workloads-public-cloud-Google">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Google">
+              <span class="p-checkbox__label">Google Cloud Platform</span>
+            </label>
+            <label class="p-checkbox" for="workloads-public-cloud-IBM-Cloud">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-IBM-Cloud">
+              <span class="p-checkbox__label">IBM Cloud</span>
+            </label>
+            <label class="p-checkbox" for="workloads-public-cloud-Microsoft-Azure">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Microsoft-Azure">
+              <span class="p-checkbox__label">Microsoft Azure</span>
+            </label>
+            <label class="p-checkbox" for="workloads-public-cloud-Oracle-Cloud">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-public-cloud-Oracle-Cloud">
+              <span class="p-checkbox__label">Oracle Cloud</span>
+            </label>
+            <div class="js-other-container">
+              <label class="p-checkbox" for="workloads-public-cloud-other">
+                <input type="checkbox" class="js-other-container__checkbox p-checkbox__input"
+                  id="workloads-public-cloud-other">
+                <span class="p-checkbox__label">Other</span>
+              </label>
+              <label for="workloads-public-cloud-other-specified">
+                <input type="text" id="workloads-public-cloud-other-specified" class="js-other-container__input"
+                  placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
+                  aria-label="Other private cloud platform">
+              </label>
+            </div>
+          </div>
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="workloads-metal-Nvidia">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-metal-Nvidia">
+              <span class="p-checkbox__label">Nvidia</span>
+            </label>
+            <label class="p-checkbox" for="workloads-metal-AMD">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-metal-AMD">
+              <span class="p-checkbox__label">AMD</span>
+            </label>
+            <label class="p-checkbox" for="workloads-metal-Intel">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-metal-Intel">
+              <span class="p-checkbox__label">Intel</span>
+            </label>
+            <label class="p-checkbox" for="workloads-metal-POWER">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-metal-POWER">
+              <span class="p-checkbox__label">POWER</span>
+            </label>
+            <label class="p-checkbox" for="workloads-metal-Z">
+              <input class="p-checkbox__input" type="checkbox" id="workloads-metal-Z">
+              <span class="p-checkbox__label">Z</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <ol class="p-pagination">
+        <li class="p-pagination__item">
+          <a class="p-button--positive p-pagination__link--next" href="">Next</a>
+        </li>
+      </ol>
+    </div>
 
-		<div class="js-pagination js-pagination--2 u-hide">
-			<div class="js-formfield">
-				<h3 class="p-heading--5">What are the major pain points in your ML workflows?</h3>
-				<div class="row u-no-padding">
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="pain-points-Infrastructure-Setup">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Infrastructure-Setup">
-							<span class="p-checkbox__label">Infrastructure Setup</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Getting-Started">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Getting-Started">
-							<span class="p-checkbox__label">Getting Started</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Technical-Skills">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Technical-Skills">
-							<span class="p-checkbox__label">Technical Skills</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-GPU-Passthrough">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-GPU-Passthrough">
-							<span class="p-checkbox__label">GPU Passthrough</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-GPU-Sharing">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-GPU-Sharing">
-							<span class="p-checkbox__label">GPU Sharing</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Production-Readiness">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Production-Readiness">
-							<span class="p-checkbox__label">Production Readiness</span>
-						</label>
-					</div>
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="pain-points-Data-Sourcing">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Sourcing">
-							<span class="p-checkbox__label">Data Sourcing</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Data-Cleaning">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Cleaning">
-							<span class="p-checkbox__label">Data Cleaning</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Data-Provenance">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Provenance">
-							<span class="p-checkbox__label">Data Provenance</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Data-Pipelines">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Pipelines">
-							<span class="p-checkbox__label">Data Pipelines</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Jupyter-Notebooks">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Jupyter-Notebooks">
-							<span class="p-checkbox__label">Jupyter Notebooks</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Multi-tenancy">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Multi-tenancy">
-							<span class="p-checkbox__label">Multi-tenancy</span>
-						</label>
-					</div>
-					<div class="col-4 u-sv3">
-						<label class="p-checkbox" for="pain-points-Planning">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Planning">
-							<span class="p-checkbox__label">Planning</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Performance">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Performance">
-							<span class="p-checkbox__label">Performance</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Observability">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Observability">
-							<span class="p-checkbox__label">Observability</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Security">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Security">
-							<span class="p-checkbox__label">Security</span>
-						</label>
-						<label class="p-checkbox" for="pain-points-Compliance">
-							<input type="checkbox" class="p-checkbox__input" id="pain-points-Compliance">
-							<span class="p-checkbox__label">Compliance</span>
-						</label>
-						<div class="js-other-container">
-							<label class="p-checkbox" for="pain-points-other">
-								<input type="checkbox" class="js-other-container__checkbox p-checkbox__input" id="pain-points-other">
-								<span class="p-checkbox__label">Other</span>
-							</label>
-							<label for="pain-points-other-specified">
-								<input type="text" id="pain-points-other-specified" class="js-other-container__input"
-									placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
-									aria-label="Other private cloud platform">
-							</label>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="js-formfield u-sv3">
-				<h3 class="p-heading--5">Have we missed something?</h3>
-				<textarea id="we-missed-something" name="we-missed-something"
-					aria-label="Anything extra you'd like to communicate about your needs or interests?" rows="3"></textarea>
-			</div>
-			<ol class="p-pagination">
-				<li class="p-pagination__item">
-					<a class="p-pagination__link--previous p-button" href="">Previous</a>
-				</li>
-				<li class="p-pagination__item">
-					<a class="p-pagination__link--next p-button--positive" href="">Next</a>
-				</li>
-			</ol>
-		</div>
+    <div class="js-pagination js-pagination--2 u-hide">
+      <div class="js-formfield">
+        <h3 class="p-heading--5">What are the major pain points in your ML workflows?</h3>
+        <div class="row u-no-padding">
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="pain-points-Infrastructure-Setup">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Infrastructure-Setup">
+              <span class="p-checkbox__label">Infrastructure Setup</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Getting-Started">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Getting-Started">
+              <span class="p-checkbox__label">Getting Started</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Technical-Skills">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Technical-Skills">
+              <span class="p-checkbox__label">Technical Skills</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-GPU-Passthrough">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-GPU-Passthrough">
+              <span class="p-checkbox__label">GPU Passthrough</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-GPU-Sharing">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-GPU-Sharing">
+              <span class="p-checkbox__label">GPU Sharing</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Production-Readiness">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Production-Readiness">
+              <span class="p-checkbox__label">Production Readiness</span>
+            </label>
+          </div>
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="pain-points-Data-Sourcing">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Sourcing">
+              <span class="p-checkbox__label">Data Sourcing</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Data-Cleaning">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Cleaning">
+              <span class="p-checkbox__label">Data Cleaning</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Data-Provenance">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Provenance">
+              <span class="p-checkbox__label">Data Provenance</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Data-Pipelines">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Data-Pipelines">
+              <span class="p-checkbox__label">Data Pipelines</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Jupyter-Notebooks">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Jupyter-Notebooks">
+              <span class="p-checkbox__label">Jupyter Notebooks</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Multi-tenancy">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Multi-tenancy">
+              <span class="p-checkbox__label">Multi-tenancy</span>
+            </label>
+          </div>
+          <div class="col-4 u-sv3">
+            <label class="p-checkbox" for="pain-points-Planning">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Planning">
+              <span class="p-checkbox__label">Planning</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Performance">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Performance">
+              <span class="p-checkbox__label">Performance</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Observability">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Observability">
+              <span class="p-checkbox__label">Observability</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Security">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Security">
+              <span class="p-checkbox__label">Security</span>
+            </label>
+            <label class="p-checkbox" for="pain-points-Compliance">
+              <input type="checkbox" class="p-checkbox__input" id="pain-points-Compliance">
+              <span class="p-checkbox__label">Compliance</span>
+            </label>
+            <div class="js-other-container">
+              <label class="p-checkbox" for="pain-points-other">
+                <input type="checkbox" class="js-other-container__checkbox p-checkbox__input" id="pain-points-other">
+                <span class="p-checkbox__label">Other</span>
+              </label>
+              <label for="pain-points-other-specified">
+                <input type="text" id="pain-points-other-specified" class="js-other-container__input"
+                  placeholder="Please specify" style="opacity: 0; margin-top: .25rem;"
+                  aria-label="Other private cloud platform">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-formfield u-sv3">
+        <h3 class="p-heading--5">Have we missed something?</h3>
+        <textarea id="we-missed-something" name="we-missed-something"
+          aria-label="Anything extra you'd like to communicate about your needs or interests?" rows="3"></textarea>
+      </div>
+      <ol class="p-pagination">
+        <li class="p-pagination__item">
+          <a class="p-pagination__link--previous p-button" href="">Previous</a>
+        </li>
+        <li class="p-pagination__item">
+          <a class="p-pagination__link--next p-button--positive" href="">Next</a>
+        </li>
+      </ol>
+    </div>
+    <div class="js-pagination js-pagination--3 u-hide">
+      <div class="row u-no-padding">
+        <div class="col-12">
+          <form class="p-form" action="https://ubuntu.com/marketo/submit" method="post">
+            <ul class="p-list">
+              <li class="p-list__item">
+                <label for="firstName">First name:</label>
+                <input required id="firstName" name="firstName" maxlength="255" type="text" required="required" />
+              </li>
+              <li class="p-list__item">
+                <label for="lastName">Last name:</label>
+                <input required id="lastName" name="lastName" maxlength="255" type="text" required="required" />
+              </li>
+              <li class="p-list__item">
+                <label for="email">Email address:</label>
+                <input required id="email" name="email" maxlength="255" type="email" required="required" />
+              </li>
+              <li class="p-list__item">
+                <label for="canonicalUpdatesOptIn">
+                  <input class="p-checkbox__input" value="yes" id="canonicalUpdatesOptIn" name="canonicalUpdatesOptIn"
+                    type="checkbox" aria-labelledby="canonicalUpdatesOptIn" />
+                  <span class="p-checkbox__label" id="canonicalUpdatesOptIn">I agree to receive information about
+                    Canonical's products and services.</span>
+                </label>
+              </li>
+              <li class="p-list__item">
+                <p>Submitting this form confirms that I have read and agree to <a
+                    href="/legal/data-privacy/contact">Canonical&rsquo;s Privacy Notice</a> and <a
+                    href="/legal/data-privacy">Privacy Policy</a>.</p>
+              </li>
+              <li class="p-list__item">
+                <div class="g-recaptcha" data-sitekey="6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if"
+                  style="margin: 2rem 0;"></div>
+              </li>
+            </ul>
 
-		<div class="js-pagination js-pagination--3 u-hide">
-			<div class="row u-no-padding">
-				<div class="col-12">
-					<form action="http://ubuntu.com/marketo/submit" method="post" id="mktoForm_1337">
-						<ul class="p-list">
-							<li class="p-list__item">
-								<label for="firstName" class="mktoLabel">First name:</label>
-								<input required id="firstName" name="firstName" maxlength="255" type="text" required="required" />
-							</li>
-							<li class="p-list__item">
-								<label for="lastName" class="mktoLabel">Last name:</label>
-								<input required id="lastName" name="lastName" maxlength="255" type="text" required="required" />
-							</li>
-							<li class="p-list__item">
-								<label for="email" class="mktoLabel">Email address:</label>
-								<input required id="email" name="email" maxlength="255" type="email" required="required" />
-							</li>
-							<li class="p-list__item">
-								<input class="mktoField" value="yes" id="canonicalUpdatesOptIn" name="canonicalUpdatesOptIn"
-									type="checkbox" />
-								<label class="mktoLabel mktoHasWidth" for="canonicalUpdatesOptIn">Please send me information about
-									Canonical's products and services.</label>
-							</li>
-							<li class="p-list__item">
-								<p>Submitting this form confirms that I have read and agree to <a
-										href="/legal/data-privacy/contact">Canonical&rsquo;s Privacy Notice</a> and <a
-										href="/legal/data-privacy">Privacy Policy</a>.</p>
-							</li>
-							<li class="p-list__item">
-								<div class="g-recaptcha" data-sitekey="6LfYBloUAAAAAINm0KzbEv6TP0boLsTEzpdrB8if"
-									style="margin: 2rem 0;"></div>
-							</li>
-						</ul>
+            <div class="u-hide">
+              <h3>Your comments</h3>
+              <ul class="p-list">
+                <li class="p-list__item">
+                  <label for="dynamic-forms-comments">What would you like to talk to us
+                    about?</label>
+                  <textarea id="dynamic-forms-comments" name="dynamic-forms-comments" rows="5"
+                    maxlength="2000"></textarea>
+                </li>
+              </ul>
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" value="1337" />
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL"
+                value="https://charmed-kubeflow.io/thank-you" />
+              <input type="hidden" aria-hidden="true" aria-label="hidden field" name="Consent_to_Processing__c"
+                value="yes" />
+            </div>
 
-						<div class="u-hide">
-							<h3>Your comments</h3>
-							<ul class="p-list">
-								<li class="mktFormReq mktField p-list__item">
-									<label for="dynamic-forms-comments" class="mktoLabel">What would you like to talk to us about?</label>
-									<textarea id="dynamic-forms-comments" name="dynamic-forms-comments" rows="5" class="mktoField"
-										maxlength="2000"></textarea>
-								</li>
-							</ul>
-							<input type="hidden" aria-hidden="true" aria-label="hidden field" name="formid" value="1337" />
-							<input type="hidden" aria-hidden="true" aria-label="hidden field" name="returnURL"
-								value="https://charmed-kubeflow.io/thank-you" />
-							<input type="hidden" aria-hidden="true" aria-label="hidden field" name="Consent_to_Processing__c"
-								value="yes" />
-						</div>
-
-						<ol class="p-pagination">
-							<li class="p-pagination__item">
-								<a class="p-pagination__link--previous p-button" href="">Previous</a>
-							</li>
-							<li class="p-pagination__item">
-								<button type="submit" class="p-button--positive" aria-label="Submit"
-									onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Form', 'eventAction' : 'charmed-kubeflow contact-us', 'eventLabel' : '{{product}}', 'eventValue' : undefined });">Let's
-									discuss</button>
-							</li>
-				</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+            <ol class="p-pagination">
+              <li class="p-pagination__item">
+                <a class="p-pagination__link--previous p-button" href="">Previous</a>
+              </li>
+              <li class="p-pagination__item">
+                <button type="submit" class="p-button--positive" aria-label="Submit"
+                  onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Form', 'eventAction' : 'charmed-kubeflow contact-us', 'eventLabel' : '{{product}}', 'eventValue' : undefined });">Let's
+                  discuss</button>
+              </li>
+            </ol>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

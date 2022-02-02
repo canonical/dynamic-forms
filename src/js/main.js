@@ -1,9 +1,8 @@
 export function setupForm () {
   document.addEventListener("DOMContentLoaded", function (e) {
     var triggeringHash = "#get-in-touch";
-    var formContainer = document.getElementById("contact-form-container");
+    var formContainer = document.querySelector(".contact-form-container");
     var contactButtons = document.querySelectorAll(".js-invoke-modal");
-
     contactButtons.forEach(function (contactButton) {
       contactButton.addEventListener("click", function (e) {
         e.preventDefault();
@@ -152,7 +151,6 @@ export function setupForm () {
         ".p-pagination a"
       );
       var paginationContent = contactModal.querySelectorAll(".js-pagination");
-      var submitButton = contactModal.querySelector(".mktoButton");
       var comment = contactModal.querySelector("#dynamic-forms-comments");
       var otherContainers = document.querySelectorAll(".js-other-container");
 
@@ -162,17 +160,6 @@ export function setupForm () {
           close();
         }
       };
-      if (submitButton && typeof ga !== "undefined") {
-        submitButton.addEventListener("click", function () {
-          ga(
-            "send",
-            "event",
-            "interactive-forms",
-            "submitted",
-            window.location.pathname
-          );
-        });
-      }
 
       if (closeModal) {
         closeModal.addEventListener("click", function (e) {
@@ -311,7 +298,7 @@ export function setupForm () {
                   } else {
                     label = input.id;
                   }
-                  message += comma + label + "\r\n\r\n";
+                  message += label.trim() + "\r\n";
                   comma = ", ";
                 }
                 break;

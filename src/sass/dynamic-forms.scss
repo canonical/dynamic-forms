@@ -1,5 +1,6 @@
 /* Vanilla components */
-@import 'vanilla-framework';
+@import "vanilla-framework";
+
 @include vanilla;
 
 /* Include base Vanilla styles */
@@ -7,6 +8,7 @@
 
 /* Include all the CSS */
 @include vf-base;
+@include vf-p-grid;
 @include vf-b-typography;
 @include vf-b-hr;
 @include vf-p-modal;
@@ -17,4 +19,3 @@
 @include vf-u-margin-collapse;
 @include vf-u-off-screen;
 @include vf-u-hide;
-

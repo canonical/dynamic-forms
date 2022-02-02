@@ -3,9 +3,6 @@ import commonjs from 'rollup-plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import sass from 'rollup-plugin-sass';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
-import postcss from 'postcss';
 import pkg from './package.json';
 
 export default [
