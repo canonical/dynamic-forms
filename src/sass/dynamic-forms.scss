@@ -1,5 +1,6 @@
 /* Vanilla components */
-@import 'vanilla-framework';
+@import "vanilla-framework";
+
 @include vanilla;
 
 /* Include base Vanilla styles */
@@ -17,4 +18,3 @@
 @include vf-u-margin-collapse;
 @include vf-u-off-screen;
 @include vf-u-hide;
-
