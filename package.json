@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/canonical-web-and-design/dynamic-forms#readme",
   "dependencies": {
-    "vanilla-framework": "3.2.0"
+    "vanilla-framework": "3.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.16.7",
